@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>eBook Interattivo Risparmio Intelligente</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Piano di Risparmio Personalizzato</h1>
+    <p>Hai letto, capito e assorbito le basi della gestione finanziaria. Ora è il momento di mettere tutto in pratica.</p>
+    <a href="#interattivo" class="button">Vai al generatore personalizzato</a>
+
+    <h2 id="interattivo">🧩 Generatore di Piano Personalizzato</h2>
+    <p>Inserisci le tue entrate mensili e lascia che il nostro sistema ti suggerisca il miglior piano possibile.</p>
+
+    <input type="number" id="income" placeholder="Entrate mensili in €" />
+    <button onclick="generatePlan()">Genera piano di risparmio</button>
+    <div id="result"></div>
+    <canvas id="chart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
