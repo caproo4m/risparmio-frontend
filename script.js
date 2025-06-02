@@ -4,7 +4,7 @@ async function generatePlan() {
   resultDiv.innerHTML = "Generazione in corso...";
 
   try {
-    const res = await fetch("http://localhost:3000/generate", {
+    const res = await fetch("https://risparmio-interattivo.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ income })
